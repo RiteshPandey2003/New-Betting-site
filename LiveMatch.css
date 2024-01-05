@@ -1,0 +1,563 @@
+:root {
+    /* --d: 2500ms;
+    --angle: 90deg;
+    --gradX: 100%;
+    --gradY: 50%;
+    --c1: rgba(168, 239, 255, 1);
+    --c2: rgba(168, 239, 255, 0.1); */
+    --background-color: #111111;
+    --primay-color: #fbad18;
+    --secondary-color: #efeeee;
+
+}
+
+/* body{
+    margin: 1rem;
+} */
+/* live score */
+.main-section {
+    padding: 2rem 0;
+    margin: 6rem auto;
+    /* width: 90%; */
+    border: 2px solid var(--secondary-color);
+}
+
+.main-section .match-title {
+    color: var(--secondary-color) !important;
+    text-align: center;
+    margin: 1rem;
+}
+
+#main-nav {
+    /* overflow-x: scroll; */
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-wrap: wrap;
+}
+
+a {
+    text-decoration: none;
+    padding: 0.5rem;
+    border-bottom: 4px solid transparent;
+    flex-grow: 0;
+    font-size: 0.875rem;
+    font-weight: medium;
+    white-space: nowrap;
+    cursor: pointer;
+}
+#main-nav .btn:hover {
+    border: 2px solid var(--primay-color);
+    background: transparent;
+    font-weight: bolder;
+    color: var(--secondary-color);
+    cursor: pointer;
+}
+.active{
+    border: 2px solid var(--primay-color);
+    background: transparent;
+    font-weight: bolder;
+    color: var(--secondary-color);
+    cursor: pointer;
+}
+
+.score {
+    margin: 1rem;
+    padding-bottom: 2rem;
+
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    gap: 2rem;
+    border-bottom: 1px solid var(--secondary-color);
+}
+
+.score .left, .score .right {
+    display: flex;
+    align-items: center;
+    justify-content: space-evenly;
+    gap: 2rem;
+
+}
+
+
+.score .left .img, .score .right .img {
+    width: 50px;
+    height: 50px;
+}
+
+.score .left .img img, .score .right .img img {
+    width: 100%;
+    height: 100%;
+    border-radius: 50%;
+}
+
+.run-rate {
+    display: flex;
+    align-items: center;
+    justify-content: space-evenly;
+}
+
+@media (max-width:550px) {
+    #main-nav {
+        margin: 0 0.5rem;
+        overflow-x: scroll;
+        flex-wrap: nowrap;
+        justify-content: space-between;
+    }
+
+    .score {
+        margin: 1rem;
+        justify-content: space-evenly;
+    }
+
+    .score .left, .score .right {
+        gap: 1rem;
+    }
+
+
+}
+
+
+/* .overs{
+
+    margin: 2rem;
+} */
+.live-match-overs {
+    color: var(--background-color);
+    display: flex;
+    flex-wrap: wrap;
+}
+
+.sport-team-score-details {
+    background-color: var(--secondary-color);
+    border-radius: 8px;
+    margin: 0;
+    margin-bottom: 20px;
+}
+
+.liver-overs {
+    flex-grow: 1;
+    flex-basis: 48%;
+    margin: 6px;
+    font-weight: 700;
+}
+
+.sport-team-score-details .liver-overs:nth-child(1), .sport-team-score-details .liver-overs:nth-child(3) {
+    border-right: 1px solid;
+}
+
+.liver-overs span:nth-child(1) {
+    margin-right: 10px;
+}
+
+.liver-overs span:not(:nth-child(1)) {
+    border: 1px solid;
+    border-radius: 100%;
+    width: 30px;
+    height: 30px;
+    display: inline-flex;
+    align-items: center;
+    justify-content: center;
+    text-align: center;
+    margin: 0 5px;
+}
+
+/* @media  (max-width: 599px){
+
+    .match-live-overr {
+        flex-wrap: nowrap;
+flex-direction: column;
+        overflow-x: scroll;
+    }
+} */
+
+/* Batting table */
+
+.sport-team-score-details {
+    color: var(--background-color);
+    background-color: #eee;
+    border-radius: 8px;
+    margin: 0;
+    margin-bottom: 20px;
+}
+
+table, .wp-block-table {
+    width: 100%;
+    min-width: 240px;
+    border-collapse: collapse;
+    margin: 1rem;
+}
+
+table thead, table tfoot, .wp-block-table thead, .wp-block-table tfoot {
+    text-align: center;
+}
+
+thead, tbody, tfoot, tr, td, th {
+    border-color: inherit;
+    border-style: solid;
+    border-width: 0;
+}
+
+.sport-team-score-details th {
+    text-align: left;
+    border: 0;
+    border-bottom: 1px solid #eee;
+}
+
+thead, tbody, tfoot, tr, td, th {
+    border-color: inherit;
+    border-style: solid;
+    border-width: 0;
+}
+
+.yetBet {
+    padding: 10px;
+}
+
+.yetBet .batsman-heading h5 {
+    margin-bottom: 10px;
+    font-size: 14px;
+    font-weight: 700;
+}
+
+
+
+
+/* match-info */
+
+
+.sport-match-name {
+    color: var(--background-color);
+    background-color: #eee;
+    padding: 5px 10px;
+    border-radius: 8px;
+    margin-bottom: 15px;
+}
+
+.weather-report {
+    display: flex;
+    justify-content: space-between;
+    padding: 5px 0;
+    border-bottom: 1px solid #ccc;
+    font-weight: bold;
+}
+
+.team-report {
+    display: flex;
+    justify-content: space-between;
+    padding: 5px 0;
+    border-bottom: 1px solid #ccc;
+    font-weight: 900;
+}
+
+
+
+.team-report .lose, .team-report .success {
+    margin: 0 5px;
+}
+
+.team-report .success {
+    padding: 3px 9px;
+    border-radius: 8px;
+    min-width: 30px;
+    min-height: 27px;
+    display: inline-grid;
+    text-align: center;
+    align-items: center;
+    vertical-align: middle;
+    background-color: green;
+    color: #fff;
+}
+
+.team-report .lose, .team-report .success {
+    margin: 0 5px;
+}
+
+.team-report .lose {
+    padding: 3px 9px;
+    border-radius: 8px;
+    min-width: 30px;
+    min-height: 27px;
+    display: inline-grid;
+    text-align: center;
+    align-items: center;
+    vertical-align: middle;
+    background-color: red;
+    color: #fff;
+}
+
+
+.head-matches {
+    margin: 15px 0;
+    border: 1px solid;
+    padding: 10px;
+    border-radius: 8px;
+}
+
+
+
+
+.head-matches .head-match-details {
+    display: flex;
+    border-bottom: 1px solid #ccc;
+    justify-content: space-between;
+    text-align: left;
+    font-weight: 600;
+    padding: 10px 0;
+}
+
+.team-compare-report {
+    padding: 5px 0;
+}
+
+.compare-head {
+    display: flex;
+    width: 100%;
+    justify-content: space-between;
+    border-bottom: 1px solid #ccc;
+    margin-top: 20px;
+    font-weight: bold;
+}
+
+.team-compare {
+    width: 100%;
+}
+
+.team-compare .team-compare-sec {
+    display: flex;
+    justify-content: space-between;
+    border-bottom: 1px solid #ccc;
+    padding: 5px;
+    font-weight: bold;
+}
+
+.match-commentary {
+    border-radius: 0 0 8px 8px;
+    padding: 0 12px 14px;
+}
+
+.commentry-header {
+    background-color: #000;
+}
+
+.commentry-header .commentry-top-header {
+    padding: 10px;
+    border-bottom: 1px solid;
+    display: flex;
+}
+
+.commentry-header .commentry-bottom-header {
+    display: flex;
+    text-align: center;
+    width: 100%;
+    align-items: center;
+    padding: 10px;
+}
+
+.commentry-header .commentry-top-header span {
+    min-width: 50%;
+    text-align: center;
+}
+
+.commentry-header .commentry-bottom-header>div {
+    display: grid;
+    min-width: 33%;
+}
+
+.commentry-description {
+    display: flex;
+    align-items: center;
+    padding: 10px;
+}
+
+.commentry-description .left {
+    margin-right: 20px;
+    display: grid;
+    font-size: 16px;
+    font-weight: 700;
+    text-align: center;
+}
+
+.commentry-description .left .run-all, .commentry-description .left .run-4s, .commentry-description .left .run-6s, .commentry-description .left .run-wicket {
+    border: 1px solid;
+    border-radius: 100%;
+    vertical-align: middle;
+    align-items: center;
+    width: 30px;
+    height: 30px;
+    display: grid;
+}
+
+.commentry-description h4 {
+    font-size: 18px;
+}
+
+.commentry-description .right p {
+    overflow-wrap: anywhere;
+}
+
+.commentry-description .left .run-4s {
+    background-color: #bcb857;
+    color: #fff;
+}
+
+.commentry-description .left .run-wicket {
+    background-color: red;
+    color: #fff;
+}
+
+.commentry-description .left .run-6s {
+    background-color: green;
+    color: #fff;
+}
+
+.scorecard {
+    border-radius: 0 0 8px 8px;
+    padding: 0 12px 14px;
+}
+
+.sport-team-score-details {
+    background-color: #eee;
+    border-radius: 8px;
+    margin: 0;
+    margin-bottom: 20px;
+}
+
+table, .wp-block-table {
+    width: 100%;
+    min-width: 240px;
+    border-collapse: collapse;
+}
+
+table thead, table tfoot, .wp-block-table thead, .wp-block-table tfoot {
+    text-align: center;
+}
+
+thead, tbody, tfoot, tr, td, th {
+    border-color: inherit;
+    border-style: solid;
+    border-width: 0;
+}
+
+.sport-team-score-details th {
+    text-align: left;
+    border: 0;
+    border-bottom: 1px solid #eee;
+}
+
+.sport-team-score-details td {
+    border: 0;
+}
+
+.sport-team-score-details .f-700 {
+    font-weight: 700;
+}
+
+
+
+.red {
+    color: #ff0046;
+}
+
+table td, table th, .wp-block-table td, .wp-block-table th {
+    padding: calc(0.5 * 1rem);
+    border: 1px solid;
+}
+
+.squad {
+    border-radius: 0 0 8px 8px;
+    padding: 0 12px 14px;
+}
+
+.team-flags {
+    color: var(--background-color);
+    background: var(--secondary-color);
+    height: 48px;
+    border-radius: 5px;
+    display: flex;
+    justify-content: space-between;
+}
+
+.team-flags .left, .team-flags .right {
+    display: flex;
+}
+
+.team-flags .left div, .team-flags .right div {
+    padding: 5px;
+}
+
+.team-flags .left div img, .team-flags .right div img {
+    width: 27px;
+    height: 20px;
+}
+
+.left-team{
+    border-top: 1px solid #f0f0f0;
+    border-right: 2px solid #d3d3d3;
+    display: inline-block;
+    box-sizing: border-box;
+    float: left;
+    min-height: 1px;
+    width: 50%;
+}
+
+
+.right-team{
+    border-top: 1px solid #f0f0f0;
+    display: inline-block;
+    box-sizing: border-box;
+    float: right;
+    min-height: 1px;
+    width: 50%;
+}
+.left-team .player-info{
+    display: inline-block;
+    box-sizing: border-box;
+    min-height: 1px;
+}
+.left-team .player-info a{
+    display: flex;
+    height: 70px;
+    align-items: center;
+}
+
+.left-team .player-info a div{
+    width: 50px;
+    padding-left: 5px;
+}
+
+.left-team .player-info a div .img{
+    border-radius: 50%;
+    border: 1px solid #d3d3d3;
+
+}
+
+.player-name{
+    display: flex;
+}
+
+
+.right-team .player-info{
+    display: inline-block;
+    box-sizing: border-box;
+    min-height: 1px;
+    
+}
+.right-team .player-info a{
+    display: flex;
+    height: 70px;
+    align-items: center;
+
+}
+
+.right-team .player-info a div{
+    width: 50px;
+    padding-right: 5px;
+}
+
+.right-team .player-info a div .img{
+    float: left;
+    border-radius: 50%;
+    border: 1px solid #d3d3d3;
+}
