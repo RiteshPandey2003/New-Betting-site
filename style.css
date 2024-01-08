@@ -210,7 +210,6 @@ h1 {
     height: 100%;
     width: 100%;
     padding: 1rem;
-    border-radius: 20px;
     background: var(--secondary-color);
     position: relative;
     display: flex;
@@ -447,7 +446,7 @@ height: 100%;
     gap: 1.5rem;
     font-family: 'Bebas Neue', sans-serif;
     text-transform: uppercase;
-    margin: 3rem;
+    margin: 1rem;
    
   }
   .add-main-section{
