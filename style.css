@@ -180,6 +180,8 @@ h1 {
     align-items: center;
     justify-content: center;
     text-decoration: none;
+    color: var(--background-color);
+    text-transform: capitalize;
 }
 
 .swiper a button{
@@ -340,12 +342,12 @@ height: 100%;
 }
 
 .team-runs {
-    font-weight: lighter;
+    font-weight: bold;
     font-size: 10px;
 }
 
 .team-overs {
-    font-weight: lighter;
+    font-weight: bold;
     font-size: 10px;
 }
 
