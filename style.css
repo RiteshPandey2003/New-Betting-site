@@ -49,15 +49,12 @@ header {
 }
 
 .btn {
-    border-radius: 10px;
-    margin-right: 1rem;
-    padding: 0.5rem;
-    background: var(--primay-color);
-    color: var(--background-color);
     border: 2px solid var(--primay-color);
-    font-weight: bold;
-    /* box-shadow: 2px 2px 10px 0px ; */
-
+    background: transparent;
+    font-weight: bolder;
+    color: var(--secondary-color);
+    cursor: pointer;
+padding: 0.5rem;
 }
 
 h1 {
@@ -98,24 +95,16 @@ h1 {
 }
 
 .navbar .right button {
-    border-radius: 10px;
-    margin-right: 1rem;
-    padding: 0.5rem;
-    font-weight: bold;
-    /* background: transparent; */
-    color: var(--background-color);
-    border: 2px solid var(--primay-color);
-    /* border: 2px  solid blue; */
-}
-
-.navbar .right button:hover {
 
     border: 2px solid var(--primay-color);
     background: transparent;
     font-weight: bolder;
     color: var(--secondary-color);
     cursor: pointer;
+    margin-right: 1rem;
 }
+
+
 
 
 /* main section slider */
@@ -154,33 +143,33 @@ h1 {
     text-align: center;
     border-radius: 0px;
     padding: 0.5rem;
-    transform: skewX(-20deg);
+    /* transform: skewX(-20deg); */
     
 }
 
 
 .active-live, .live-btn:hover {
-    border: none;
-    background: green;
+    border:2px solid green ;
     color: var(--secondary-color);
     font-weight: bolder;
 }
 
 .active-recent ,.recent-btn:hover {
-    border: none;
-    background: red;
+    border: 2px solid red;
     color: var(--secondary-color);
     font-weight: bolder;
 }
 
 .active-upcoming, .upcoming-btn:hover {
-    border: none;
-    background: blue;
+    border: 2px solid blue;
     color: var(--secondary-color);
     font-weight: bolder;
 }
 
-
+.cards{
+  margin: auto;
+  width: 100%;
+}
 .swiper {
     width: 100%;
     height: 100%;
@@ -191,7 +180,6 @@ h1 {
     align-items: center;
     justify-content: center;
     text-decoration: none;
-    padding: 1rem;
 }
 
 .swiper a button{
@@ -247,8 +235,7 @@ h1 {
 }
 
 .score-card {
-    height: 80%;
-    width: 80%;
+    width: 100%;
 
 
 }
@@ -267,7 +254,7 @@ h1 {
     width: 100%;
     display: flex;
     align-items: center;
-    justify-content: space-around;
+    justify-content: space-between;
     backdrop-filter: blur(2px);
 }
 
@@ -281,24 +268,11 @@ h1 {
 }
 
 .dot-left img, .dot-right img {
-    border-radius: 50%;
+width: 100%;
+height: 100%;
 }
 
-.dot-left {
-    border: 1.5px solid black;
-    border-top: 1px;
-    border-left: none;
-    border-radius: 0 50% 50% 0;
 
-}
-
-.dot-right {
-    border: 1.5px solid black;
-    border-top: 1px;
-    border-right: none;
-    border-radius: 50% 0% 0 50%;
-
-}
 
 .dot {
     height: 50px;
@@ -326,7 +300,7 @@ h1 {
     text-align: center;
 }
 
-.team-right-flag,
+/* .team-right-flag,
 .team-left-flag {
     height: 100%;
     width: 100%;
@@ -337,10 +311,27 @@ h1 {
     height: 100%;
     width: 100%;
     object-fit: cover;
-}
+} */
 
 .team-score {
     gap: 5px;
+}
+
+.team-left .team-score{
+  display: flex;
+  align-items: flex-start;
+  justify-content: flex-start;
+  flex-direction: column;
+
+
+}
+.team-right .team-score{
+  display: flex;
+  align-items: flex-end;
+  justify-content: flex-end;
+  flex-direction: column;
+
+
 }
 
 .team-name {
