@@ -190,7 +190,8 @@ table, .wp-block-table {
     width: 100%;
     min-width: 240px;
     border-collapse: collapse;
-    margin: 1rem;
+    margin: 1rem 0rem; 
+
 }
 
 table thead, table tfoot, .wp-block-table thead, .wp-block-table tfoot {
