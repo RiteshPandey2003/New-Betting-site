@@ -18,7 +18,7 @@
 .main-section {
     padding: 2rem 0;
     margin: 6rem auto;
-    /* width: 90%; */
+    width: 90%;
     border: 2px solid var(--secondary-color);
 }
 
@@ -109,6 +109,7 @@ a {
     .score {
         margin: 1rem;
         justify-content: space-evenly;
+        font-size: 12px;
     }
 
     .score .left, .score .right {
