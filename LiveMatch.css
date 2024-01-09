@@ -358,7 +358,9 @@ thead, tbody, tfoot, tr, td, th {
 }
 
 .commentry-header {
-    background-color: #000;
+    background-color: var(--secondary-color);
+    color: var(--background-color);
+    font-weight: bolder;
 }
 
 .commentry-header .commentry-top-header {
