@@ -462,6 +462,16 @@ thead, tbody, tfoot, tr, td, th {
     border-style: solid;
     border-width: 0;
 }
+.batter thead tr ,.fow thead tr  {
+    background: green;
+    color: white;
+    border-bottom: 5px solid black;
+}
+.bowler thead tr{
+    background: red;
+    color: white;
+    border-bottom: 5px solid black;
+}
 
 .sport-team-score-details th {
     text-align: left;
