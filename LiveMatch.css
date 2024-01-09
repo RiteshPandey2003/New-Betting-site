@@ -249,7 +249,7 @@ thead, tbody, tfoot, tr, td, th {
     color: var(--background-color);
     background-color: #eee;
     padding:10px;
-    border-radius: 8px;
+    /* border-radius: 8px; */
     margin-bottom: 15px;
 }
 
@@ -277,7 +277,7 @@ thead, tbody, tfoot, tr, td, th {
 
 .team-report .success {
     padding: 3px 9px;
-    border-radius: 8px;
+    /* border-radius: 8px; */
     min-width: 30px;
     min-height: 27px;
     display: inline-grid;
@@ -294,7 +294,7 @@ thead, tbody, tfoot, tr, td, th {
 
 .team-report .lose {
     padding: 3px 9px;
-    border-radius: 8px;
+    /* border-radius: 8px; */
     min-width: 30px;
     min-height: 27px;
     display: inline-grid;
@@ -310,7 +310,7 @@ thead, tbody, tfoot, tr, td, th {
     margin: 15px 0;
     border: 1px solid;
     padding: 10px;
-    border-radius: 8px;
+    /* border-radius: 8px; */
 }
 
 
@@ -442,7 +442,7 @@ thead, tbody, tfoot, tr, td, th {
 
 .sport-team-score-details {
     background-color: #eee;
-    border-radius: 8px;
+    /* border-radius: 8px; */
     margin: 0;
     margin-bottom: 20px;
 }
