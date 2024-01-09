@@ -17,8 +17,8 @@
 /* live score */
 .main-section {
     padding: 2rem 0;
-    margin: 6rem auto;
-    width: 90%;
+    margin: 6rem auto 2rem;
+    width: 95%;
     border: 2px solid var(--secondary-color);
 }
 
@@ -167,14 +167,14 @@ a {
     margin: 0 5px;
 }
 
-/* @media  (max-width: 599px){
+@media  (max-width: 599px){
 
     .match-live-overr {
         flex-wrap: nowrap;
 flex-direction: column;
         overflow-x: scroll;
     }
-} */
+}
 
 /* Batting table */
 
