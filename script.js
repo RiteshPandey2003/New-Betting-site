@@ -1,4 +1,5 @@
-var apiKey ="" ;
+
+var apiKey = config.API_KEY;
 
 var requestOptions = {
     method: "GET",
