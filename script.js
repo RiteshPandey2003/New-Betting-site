@@ -149,7 +149,7 @@ fetch(`http://apicricketchampion.in/apiv3/recentMatches/${apiKey}`, requestOptio
                     var match_id = match.match_id;
                     getMatchInfo(match_id)
                     match_data += `<div class="swiper-slide">
-                                          <a href="LiveMatch.html">
+                                          <a href="recentmatchs.html">
                                           <div class="score-card-frame">
                                               <div class="score-card-frame1">
                                               <div class="score-card">
@@ -281,7 +281,7 @@ fetch(`http://apicricketchampion.in/apiv3/upcomingMatches/${apiKey}`, requestOpt
                     var match_id = match.match_id;
                     // getMatchInfo(match_id)
                     match_data += `<div class="swiper-slide">
-                        <a href="#">
+                        <a href="upcomingmatchs.html">
                           <div class="score-card-frame">
                             <div class="score-card-frame1">
                               <div class="score-card">

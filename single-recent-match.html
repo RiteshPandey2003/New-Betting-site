@@ -1,0 +1,1637 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>live Match</title>
+    <link rel="stylesheet" href="style.css" />
+    <link rel="stylesheet" href="LiveMatch.css" />
+  </head>
+  <body>
+    <!-- header -->
+    <header>
+      <div class="header-element">
+        <nav class="navbar">
+          <div class="left">
+            <img src="img/final.png" alt="" class="logo" />
+          </div>
+          <div class="right">
+            <button class="btn">Download</button>
+          </div>
+        </nav>
+      </div>
+    </header>
+
+    <!-- header end -->
+
+    <!-- Live Scores -->
+    <div class="main-section">
+      <h1 class="match-title">India v/s Pakistan</h1>
+
+      <nav id="main-nav">
+        <a class="match-info-btn btn">Info</a>
+        <a class="scorecard-btn btn">ScoreCard</a>
+        <a class="squad-btn btn">Squads</a>
+      </nav>
+
+      <div class="score">
+        <div class="left">
+          <div class="img">
+            <img
+              src="https://upload.wikimedia.org/wikipedia/en/thumb/4/41/Flag_of_India.svg/1200px-Flag_of_India.svg.png"
+              alt=""
+            />
+          </div>
+          <div class="score-left">
+            <p>IND</p>
+            <p>100-0</p>
+            <p>5.0</p>
+          </div>
+        </div>
+        <div class="mid">
+          <p class="live-status">out</p>
+        </div>
+        <div class="right">
+          <div class="score-right">
+            <p>PAK</p>
+            <p>120-9</p>
+            <p>20.0</p>
+          </div>
+          <div class="img">
+            <img
+              src="https://cdn.britannica.com/46/3346-004-D3BDE016/flag-symbolism-Pakistan-design-Islamic.jpg"
+              alt=""
+            />
+          </div>
+        </div>
+      </div>
+
+      <div class="run-rate">
+        <div class="cur-rate">
+          <p>man of match : reddy</p>
+        </div>
+        
+      </div>
+    </div>
+    <!-- Live Scores end -->
+
+    <!-- live match data start -->
+
+   
+
+    <!-- Match Info Start -->
+    <div class="match-info" style="display: none;" >
+      <div class="sport-match-name cricket-info-details">
+        <p class="matchs">3rd Test</p>
+        <p class="matchvsmatch"><strong>AUS vs PAK</strong></p>
+      </div>
+      <div class="sport-match-name">
+        <p class="matchTime">
+          <i class="fa-regular fa-calendar-days"></i>05:00 AM 03-Jan your time
+        </p>
+      </div>
+      <div class="sport-match-name">
+        <p>
+          <i class="fa-solid fa-map-marker"></i>
+          <strong>Sydney Cricket Ground, Sydney</strong>
+        </p>
+      </div>
+
+      <div class="sport-match-name">
+        <h4>TOSS</h4>
+        <p>Pakistan have won the toss and have opted to bat</p>
+      </div>
+
+      <div class="sport-match-name">
+        <h4>UMPIRE</h4>
+        <p>Joel Wilson, Richard Illingworth</p>
+      </div>
+
+      <div class="sport-match-name">
+        <h4>3RD UMPIRE</h4>
+        <p>Michael Gough</p>
+      </div>
+      <div class="sport-match-name">
+        <h4>Referee</h4>
+        <p>Javagal Srinath</p>
+      </div>
+
+      <div class="match-weather sport-match-name">
+        <h4>Weather Report (Sydney)</h4>
+        <div class="weather-report">
+          <span
+            ><img
+              src="https://cdn.weatherapi.com/weather/64x64/day/116.png"
+            />29℃</span
+          >
+          <span>Partly cloudy</span>
+        </div>
+        <div class="weather-report">
+          <span>Wind Speed</span>
+          <span>21.7 m/h</span>
+        </div>
+        <div class="weather-report">
+          <span>Humidity</span>
+          <span>48 %</span>
+        </div>
+        <div class="weather-report">
+          <span>Rain Chance</span>
+          <span>50 %</span>
+        </div>
+      </div>
+
+      <div class="match-weather sport-match-name">
+        <h4>Team Forms (Last 5 matches)</h4>
+        <div class="team-report">
+          <div class="report-data">
+            <span>AUS</span>
+          </div>
+          <div class="report-data">
+            <span class="success">W</span><span class="success">W</span
+            ><span class="lose">L</span><span class="lose">L</span
+            ><span class="success">W</span>
+          </div>
+        </div>
+        <div class="team-report">
+          <div class="report-data">
+            <span>PAK</span>
+          </div>
+          <div class="report-data">
+            <span class="lose">L</span><span class="lose">L</span
+            ><span class="lose">L</span><span class="success">W</span
+            ><span class="success">W</span>
+          </div>
+        </div>
+      </div>
+
+      <div class="match-weather sport-match-name">
+        <h4>Toss Comparison (Last 5 matches)</h4>
+        <div class="team-report">
+          <div class="report-data">
+            <span>AUS</span>
+          </div>
+          <div class="report-data">
+            <span class="lose">L</span><span class="success">W</span
+            ><span class="success">W</span><span class="success">W</span
+            ><span class="success">W</span>
+          </div>
+        </div>
+        <div class="team-report">
+          <div class="report-data">
+            <span>PAK</span>
+          </div>
+          <div class="report-data">
+            <span class="success">W</span><span class="lose">L</span
+            ><span class="lose">L</span><span class="success">W</span
+            ><span class="lose">L</span>
+          </div>
+        </div>
+      </div>
+
+      <div class="match-weather sport-match-name">
+        <h4>Head To Head (Last 10 matches)</h4>
+        <div class="team-report">
+          <span>AUS</span>
+          <span>2</span>
+        </div>
+        <div class="weather-report">
+          <span>PAK</span>
+          <span>0</span>
+        </div>
+        <div class="head-matches">
+          <div class="head-match-details">
+            <div class="matchDetails">
+              AUS<br /><span>318-10 &amp; 262-10</span>96.5 &amp; 84.1
+            </div>
+            <div class="matchDetails">
+              <span class="result">Australia won by 79 runs</span><br />
+              2nd Test
+            </div>
+            <div class="matchDetails">
+              PAK<br /><span>264-10 &amp; 237-10</span>73.5 &amp; 67.2
+            </div>
+          </div>
+          <div class="head-match-details">
+            <div class="matchDetails">
+              AUS<br /><span>487-10 &amp; 233-5</span>113.2 &amp; 63.2
+            </div>
+            <div class="matchDetails">
+              <span class="result">Australia won by 360 runs</span><br />
+              1st Test
+            </div>
+            <div class="matchDetails">
+              PAK<br /><span>271-10 &amp; 89-10</span>101.5 &amp; 30.2
+            </div>
+          </div>
+          <div class="head-match-details">
+            <div class="matchDetails">AUS<br /><span>367-9</span>50</div>
+            <div class="matchDetails">
+              <span class="result">Australia won by 62 runs</span><br />
+              18th Match
+            </div>
+            <div class="matchDetails">PAK<br /><span>305-10</span>45.3</div>
+          </div>
+        </div>
+      </div>
+
+      <div class="match-weather sport-match-name">
+        <h4>Team Comparison (Last 10 matches)</h4>
+        <div class="team-compare-report">
+          <div class="compare-head">
+            <span
+              >AUS<br />
+              vs all teams</span
+            >
+            <span
+              >PAK<br />
+              vs all teams</span
+            >
+          </div>
+
+          <div class="team-compare">
+            <div class="team-compare-sec">
+              <span>10</span>
+              <span>Win</span>
+              <span>2</span>
+            </div>
+            <div class="team-compare-sec">
+              <span>305</span>
+              <span>Avg Score</span>
+              <span>203</span>
+            </div>
+            <div class="team-compare-sec">
+              <span>487</span>
+              <span>Highest Score</span>
+              <span>205</span>
+            </div>
+            <div class="team-compare-sec">
+              <span>215</span>
+              <span>Lowest Score</span>
+              <span>200</span>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+    <!-- Match Info End -->
+
+    
+
+    <!-- Scorecard start -->
+
+    <div class="scorecard" style="display: block">
+      <div class="tabs">
+        <div class="tab-pane">
+          <button class="btn scrored-tab-btn active" data-id="81">
+            PAK 313 - 10 (77.1)</button
+          ><button class="btn scrored-tab-btn" data-id="142">
+            AUS 116 - 2 (47)
+          </button>
+        </div>
+        <div class="tabs-content">
+          <div class="tab-content" id="81" style="">
+            <div class="sport-team-score-details batter">
+              <table>
+                <thead>
+                  <tr>
+                    <th>Batter</th>
+                    <th>R</th>
+                    <th>B</th>
+                    <th>4s</th>
+                    <th>6s</th>
+                    <th>SR</th>
+                  </tr>
+                </thead>
+                <tbody>
+                  <tr>
+                    <td>
+                      <div class="player-name f-700">Abdullah Shafique</div>
+                      <div class="player-status red f-700">
+                        c SPD Smith b MA Starc
+                      </div>
+                    </td>
+                    <td>
+                      <div class="player-score-r f-700">0</div>
+                    </td>
+                    <td>
+                      <div class="player-score-b f-700">2</div>
+                    </td>
+                    <td>
+                      <div class="player-score-4s f-700">0</div>
+                    </td>
+                    <td>
+                      <div class="player-score-6s f-700">0</div>
+                    </td>
+                    <td>
+                      <div class="player-score-sr f-700">0.00</div>
+                    </td>
+                  </tr>
+                  <tr>
+                    <td>
+                      <div class="player-name f-700">Imam-ul-Haq</div>
+                      <div class="player-status red f-700">not out</div>
+                    </td>
+                    <td>
+                      <div class="player-score-r f-700">0</div>
+                    </td>
+                    <td>
+                      <div class="player-score-b f-700">0</div>
+                    </td>
+                    <td>
+                      <div class="player-score-4s f-700">0</div>
+                    </td>
+                    <td>
+                      <div class="player-score-6s f-700">0</div>
+                    </td>
+                    <td>
+                      <div class="player-score-sr f-700">0.00</div>
+                    </td>
+                  </tr>
+                  <tr>
+                    <td>
+                      <div class="player-name f-700">Saim Ayub</div>
+                      <div class="player-status red f-700">
+                        c AT Carey b JR Hazlewood
+                      </div>
+                    </td>
+                    <td>
+                      <div class="player-score-r f-700">0</div>
+                    </td>
+                    <td>
+                      <div class="player-score-b f-700">2</div>
+                    </td>
+                    <td>
+                      <div class="player-score-4s f-700">0</div>
+                    </td>
+                    <td>
+                      <div class="player-score-6s f-700">0</div>
+                    </td>
+                    <td>
+                      <div class="player-score-sr f-700">0.00</div>
+                    </td>
+                  </tr>
+                  <tr>
+                    <td>
+                      <div class="player-name f-700">Shan Masood</div>
+                      <div class="player-status red f-700">
+                        c SPD Smith b MR Marsh
+                      </div>
+                    </td>
+                    <td>
+                      <div class="player-score-r f-700">35</div>
+                    </td>
+                    <td>
+                      <div class="player-score-b f-700">70</div>
+                    </td>
+                    <td>
+                      <div class="player-score-4s f-700">3</div>
+                    </td>
+                    <td>
+                      <div class="player-score-6s f-700">0</div>
+                    </td>
+                    <td>
+                      <div class="player-score-sr f-700">50.00</div>
+                    </td>
+                  </tr>
+                  <tr>
+                    <td>
+                      <div class="player-name f-700">Babar Azam</div>
+                      <div class="player-status red f-700">LBW PJ Cummins</div>
+                    </td>
+                    <td>
+                      <div class="player-score-r f-700">26</div>
+                    </td>
+                    <td>
+                      <div class="player-score-b f-700">40</div>
+                    </td>
+                    <td>
+                      <div class="player-score-4s f-700">4</div>
+                    </td>
+                    <td>
+                      <div class="player-score-6s f-700">0</div>
+                    </td>
+                    <td>
+                      <div class="player-score-sr f-700">65.00</div>
+                    </td>
+                  </tr>
+                  <tr>
+                    <td>
+                      <div class="player-name f-700">Saud Shakeel</div>
+                      <div class="player-status red f-700">
+                        c AT Carey b PJ Cummins
+                      </div>
+                    </td>
+                    <td>
+                      <div class="player-score-r f-700">5</div>
+                    </td>
+                    <td>
+                      <div class="player-score-b f-700">12</div>
+                    </td>
+                    <td>
+                      <div class="player-score-4s f-700">0</div>
+                    </td>
+                    <td>
+                      <div class="player-score-6s f-700">0</div>
+                    </td>
+                    <td>
+                      <div class="player-score-sr f-700">41.67</div>
+                    </td>
+                  </tr>
+                  <tr>
+                    <td>
+                      <div class="player-name f-700">Mohammad Rizwan</div>
+                      <div class="player-status red f-700">
+                        c JR Hazlewood b PJ Cummins
+                      </div>
+                    </td>
+                    <td>
+                      <div class="player-score-r f-700">88</div>
+                    </td>
+                    <td>
+                      <div class="player-score-b f-700">103</div>
+                    </td>
+                    <td>
+                      <div class="player-score-4s f-700">10</div>
+                    </td>
+                    <td>
+                      <div class="player-score-6s f-700">2</div>
+                    </td>
+                    <td>
+                      <div class="player-score-sr f-700">85.44</div>
+                    </td>
+                  </tr>
+                  <tr>
+                    <td>
+                      <div class="player-name f-700">Agha Salman</div>
+                      <div class="player-status red f-700">
+                        c TM Head b MA Starc
+                      </div>
+                    </td>
+                    <td>
+                      <div class="player-score-r f-700">53</div>
+                    </td>
+                    <td>
+                      <div class="player-score-b f-700">67</div>
+                    </td>
+                    <td>
+                      <div class="player-score-4s f-700">8</div>
+                    </td>
+                    <td>
+                      <div class="player-score-6s f-700">0</div>
+                    </td>
+                    <td>
+                      <div class="player-score-sr f-700">79.10</div>
+                    </td>
+                  </tr>
+                  <tr>
+                    <td>
+                      <div class="player-name f-700">Sajid Khan</div>
+                      <div class="player-status red f-700">
+                        c NM Lyon b PJ Cummins
+                      </div>
+                    </td>
+                    <td>
+                      <div class="player-score-r f-700">15</div>
+                    </td>
+                    <td>
+                      <div class="player-score-b f-700">23</div>
+                    </td>
+                    <td>
+                      <div class="player-score-4s f-700">2</div>
+                    </td>
+                    <td>
+                      <div class="player-score-6s f-700">0</div>
+                    </td>
+                    <td>
+                      <div class="player-score-sr f-700">65.22</div>
+                    </td>
+                  </tr>
+                  <tr>
+                    <td>
+                      <div class="player-name f-700">Aamer Jamal</div>
+                      <div class="player-status red f-700">
+                        c MA Starc b NM Lyon
+                      </div>
+                    </td>
+                    <td>
+                      <div class="player-score-r f-700">82</div>
+                    </td>
+                    <td>
+                      <div class="player-score-b f-700">97</div>
+                    </td>
+                    <td>
+                      <div class="player-score-4s f-700">9</div>
+                    </td>
+                    <td>
+                      <div class="player-score-6s f-700">4</div>
+                    </td>
+                    <td>
+                      <div class="player-score-sr f-700">84.54</div>
+                    </td>
+                  </tr>
+                  <tr>
+                    <td>
+                      <div class="player-name f-700">Mir Hamza</div>
+                      <div class="player-status red f-700">not out</div>
+                    </td>
+                    <td>
+                      <div class="player-score-r f-700">7</div>
+                    </td>
+                    <td>
+                      <div class="player-score-b f-700">43</div>
+                    </td>
+                    <td>
+                      <div class="player-score-4s f-700">1</div>
+                    </td>
+                    <td>
+                      <div class="player-score-6s f-700">0</div>
+                    </td>
+                    <td>
+                      <div class="player-score-sr f-700">16.28</div>
+                    </td>
+                  </tr>
+                  <tr>
+                    <td>
+                      <div class="player-name f-700">Hasan Ali</div>
+                      <div class="player-status red f-700">
+                        c MA Starc b PJ Cummins
+                      </div>
+                    </td>
+                    <td>
+                      <div class="player-score-r f-700">0</div>
+                    </td>
+                    <td>
+                      <div class="player-score-b f-700">5</div>
+                    </td>
+                    <td>
+                      <div class="player-score-4s f-700">0</div>
+                    </td>
+                    <td>
+                      <div class="player-score-6s f-700">0</div>
+                    </td>
+                    <td>
+                      <div class="player-score-sr f-700">0.00</div>
+                    </td>
+                  </tr>
+                </tbody>
+              </table>
+            </div>
+            <div class="sport-team-score-details bowler">
+              <table>
+                <thead>
+                  <tr>
+                    <th>Bowler</th>
+                    <th>O</th>
+                    <th>M</th>
+                    <th>R</th>
+                    <th>W</th>
+                    <th>ER</th>
+                  </tr>
+                </thead>
+                <tbody>
+                  <tr>
+                    <td>
+                      <div class="player-name f-700">Mitchell Starc</div>
+                    </td>
+                    <td>
+                      <div class="player-score-r f-700">16</div>
+                    </td>
+                    <td>
+                      <div class="player-score-b f-700">0</div>
+                    </td>
+                    <td>
+                      <div class="player-score-4s f-700">75</div>
+                    </td>
+                    <td>
+                      <div class="player-score-6s f-700">2</div>
+                    </td>
+                    <td>
+                      <div class="player-score-sr f-700">4.69</div>
+                    </td>
+                  </tr>
+                  <tr>
+                    <td>
+                      <div class="player-name f-700">Josh Hazlewood</div>
+                    </td>
+                    <td>
+                      <div class="player-score-r f-700">15</div>
+                    </td>
+                    <td>
+                      <div class="player-score-b f-700">0</div>
+                    </td>
+                    <td>
+                      <div class="player-score-4s f-700">65</div>
+                    </td>
+                    <td>
+                      <div class="player-score-6s f-700">1</div>
+                    </td>
+                    <td>
+                      <div class="player-score-sr f-700">4.33</div>
+                    </td>
+                  </tr>
+                  <tr>
+                    <td>
+                      <div class="player-name f-700">Pat Cummins</div>
+                    </td>
+                    <td>
+                      <div class="player-score-r f-700">18</div>
+                    </td>
+                    <td>
+                      <div class="player-score-b f-700">0</div>
+                    </td>
+                    <td>
+                      <div class="player-score-4s f-700">61</div>
+                    </td>
+                    <td>
+                      <div class="player-score-6s f-700">5</div>
+                    </td>
+                    <td>
+                      <div class="player-score-sr f-700">3.39</div>
+                    </td>
+                  </tr>
+                  <tr>
+                    <td>
+                      <div class="player-name f-700">Nathan Lyon</div>
+                    </td>
+                    <td>
+                      <div class="player-score-r f-700">17.1</div>
+                    </td>
+                    <td>
+                      <div class="player-score-b f-700">0</div>
+                    </td>
+                    <td>
+                      <div class="player-score-4s f-700">74</div>
+                    </td>
+                    <td>
+                      <div class="player-score-6s f-700">1</div>
+                    </td>
+                    <td>
+                      <div class="player-score-sr f-700">4.31</div>
+                    </td>
+                  </tr>
+                  <tr>
+                    <td>
+                      <div class="player-name f-700">Mitchell Marsh</div>
+                    </td>
+                    <td>
+                      <div class="player-score-r f-700">7</div>
+                    </td>
+                    <td>
+                      <div class="player-score-b f-700">0</div>
+                    </td>
+                    <td>
+                      <div class="player-score-4s f-700">27</div>
+                    </td>
+                    <td>
+                      <div class="player-score-6s f-700">1</div>
+                    </td>
+                    <td>
+                      <div class="player-score-sr f-700">3.86</div>
+                    </td>
+                  </tr>
+                  <tr>
+                    <td>
+                      <div class="player-name f-700">Marnus Labuschagne</div>
+                    </td>
+                    <td>
+                      <div class="player-score-r f-700">3</div>
+                    </td>
+                    <td>
+                      <div class="player-score-b f-700">0</div>
+                    </td>
+                    <td>
+                      <div class="player-score-4s f-700">9</div>
+                    </td>
+                    <td>
+                      <div class="player-score-6s f-700">0</div>
+                    </td>
+                    <td>
+                      <div class="player-score-sr f-700">3.00</div>
+                    </td>
+                  </tr>
+                  <tr>
+                    <td>
+                      <div class="player-name f-700">Travis Head</div>
+                    </td>
+                    <td>
+                      <div class="player-score-r f-700">1</div>
+                    </td>
+                    <td>
+                      <div class="player-score-b f-700">0</div>
+                    </td>
+                    <td>
+                      <div class="player-score-4s f-700">1</div>
+                    </td>
+                    <td>
+                      <div class="player-score-6s f-700">0</div>
+                    </td>
+                    <td>
+                      <div class="player-score-sr f-700">1.00</div>
+                    </td>
+                  </tr>
+                </tbody>
+              </table>
+            </div>
+            <div class="sport-team-score-details fow">
+              <table>
+                <thead>
+                  <tr>
+                    <th>Fall of wickets</th>
+                    <th>Score</th>
+                    <th>Over</th>
+                  </tr>
+                </thead>
+                <tbody>
+                  <tr>
+                    <td>
+                      <div class="player-name f-700">Abdullah Shafique</div>
+                    </td>
+                    <td>
+                      <div class="player-score-r f-700">0 - 1</div>
+                    </td>
+                    <td>
+                      <div class="player-score-b f-700">0.2</div>
+                    </td>
+                  </tr>
+                  <tr>
+                    <td>
+                      <div class="player-name f-700">Saim Ayub</div>
+                    </td>
+                    <td>
+                      <div class="player-score-r f-700">4 - 2</div>
+                    </td>
+                    <td>
+                      <div class="player-score-b f-700">1.2</div>
+                    </td>
+                  </tr>
+                  <tr>
+                    <td>
+                      <div class="player-name f-700">Babar Azam</div>
+                    </td>
+                    <td>
+                      <div class="player-score-r f-700">39 - 3</div>
+                    </td>
+                    <td>
+                      <div class="player-score-b f-700">10.5</div>
+                    </td>
+                  </tr>
+                  <tr>
+                    <td>
+                      <div class="player-name f-700">Saud Shakeel</div>
+                    </td>
+                    <td>
+                      <div class="player-score-r f-700">47 - 4</div>
+                    </td>
+                    <td>
+                      <div class="player-score-b f-700">14.3</div>
+                    </td>
+                  </tr>
+                  <tr>
+                    <td>
+                      <div class="player-name f-700">Shan Masood</div>
+                    </td>
+                    <td>
+                      <div class="player-score-r f-700">96 - 5</div>
+                    </td>
+                    <td>
+                      <div class="player-score-b f-700">29.3</div>
+                    </td>
+                  </tr>
+                  <tr>
+                    <td>
+                      <div class="player-name f-700">Mohammad Rizwan</div>
+                    </td>
+                    <td>
+                      <div class="player-score-r f-700">190 - 6</div>
+                    </td>
+                    <td>
+                      <div class="player-score-b f-700">46.2</div>
+                    </td>
+                  </tr>
+                  <tr>
+                    <td>
+                      <div class="player-name f-700">Sajid Khan</div>
+                    </td>
+                    <td>
+                      <div class="player-score-r f-700">220 - 7</div>
+                    </td>
+                    <td>
+                      <div class="player-score-b f-700">52.2</div>
+                    </td>
+                  </tr>
+                  <tr>
+                    <td>
+                      <div class="player-name f-700">Agha Salman</div>
+                    </td>
+                    <td>
+                      <div class="player-score-r f-700">226 - 8</div>
+                    </td>
+                    <td>
+                      <div class="player-score-b f-700">53.4</div>
+                    </td>
+                  </tr>
+                  <tr>
+                    <td>
+                      <div class="player-name f-700">Hasan Ali</div>
+                    </td>
+                    <td>
+                      <div class="player-score-r f-700">227 - 9</div>
+                    </td>
+                    <td>
+                      <div class="player-score-b f-700">54.6</div>
+                    </td>
+                  </tr>
+                  <tr>
+                    <td>
+                      <div class="player-name f-700">Aamer Jamal</div>
+                    </td>
+                    <td>
+                      <div class="player-score-r f-700">313 - 10</div>
+                    </td>
+                    <td>
+                      <div class="player-score-b f-700">77.1</div>
+                    </td>
+                  </tr>
+                </tbody>
+              </table>
+            </div>
+            <div class="sport-team-score-details bowler">
+              <table>
+                <thead>
+                  <tr>
+                    <th>Partnership</th>
+                    <th>Run</th>
+                    <th>Ball</th>
+                  </tr>
+                </thead>
+                <tbody>
+                  <tr>
+                    <td>
+                      <div class="player-name f-700">
+                        Abdullah Shafique &amp; Saim Ayub
+                      </div>
+                    </td>
+                    <td>
+                      <div class="player-score-r f-700">0</div>
+                    </td>
+                    <td>
+                      <div class="player-score-b f-700">2</div>
+                    </td>
+                  </tr>
+                  <tr>
+                    <td>
+                      <div class="player-name f-700">
+                        Saim Ayub &amp; Shan Masood
+                      </div>
+                    </td>
+                    <td>
+                      <div class="player-score-r f-700">4</div>
+                    </td>
+                    <td>
+                      <div class="player-score-b f-700">6</div>
+                    </td>
+                  </tr>
+                  <tr>
+                    <td>
+                      <div class="player-name f-700">
+                        Babar Azam &amp; Shan Masood
+                      </div>
+                    </td>
+                    <td>
+                      <div class="player-score-r f-700">35</div>
+                    </td>
+                    <td>
+                      <div class="player-score-b f-700">57</div>
+                    </td>
+                  </tr>
+                  <tr>
+                    <td>
+                      <div class="player-name f-700">
+                        Saud Shakeel &amp; Shan Masood
+                      </div>
+                    </td>
+                    <td>
+                      <div class="player-score-r f-700">8</div>
+                    </td>
+                    <td>
+                      <div class="player-score-b f-700">22</div>
+                    </td>
+                  </tr>
+                  <tr>
+                    <td>
+                      <div class="player-name f-700">
+                        Mohammad Rizwan &amp; Shan Masood
+                      </div>
+                    </td>
+                    <td>
+                      <div class="player-score-r f-700">49</div>
+                    </td>
+                    <td>
+                      <div class="player-score-b f-700">90</div>
+                    </td>
+                  </tr>
+                  <tr>
+                    <td>
+                      <div class="player-name f-700">
+                        Mohammad Rizwan &amp; Agha Salman
+                      </div>
+                    </td>
+                    <td>
+                      <div class="player-score-r f-700">0</div>
+                    </td>
+                    <td>
+                      <div class="player-score-b f-700">1</div>
+                    </td>
+                  </tr>
+                  <tr>
+                    <td>
+                      <div class="player-name f-700">
+                        Sajid Khan &amp; Agha Salman
+                      </div>
+                    </td>
+                    <td>
+                      <div class="player-score-r f-700">30</div>
+                    </td>
+                    <td>
+                      <div class="player-score-b f-700">36</div>
+                    </td>
+                  </tr>
+                  <tr>
+                    <td>
+                      <div class="player-name f-700">
+                        Agha Salman &amp; Aamer Jamal
+                      </div>
+                    </td>
+                    <td>
+                      <div class="player-score-r f-700">6</div>
+                    </td>
+                    <td>
+                      <div class="player-score-b f-700">8</div>
+                    </td>
+                  </tr>
+                  <tr>
+                    <td>
+                      <div class="player-name f-700">
+                        Hasan Ali &amp; Aamer Jamal
+                      </div>
+                    </td>
+                    <td>
+                      <div class="player-score-r f-700">1</div>
+                    </td>
+                    <td>
+                      <div class="player-score-b f-700">8</div>
+                    </td>
+                  </tr>
+                  <tr>
+                    <td>
+                      <div class="player-name f-700">
+                        Mir Hamza &amp; Aamer Jamal
+                      </div>
+                    </td>
+                    <td>
+                      <div class="player-score-r f-700">86</div>
+                    </td>
+                    <td>
+                      <div class="player-score-b f-700">133</div>
+                    </td>
+                  </tr>
+                </tbody>
+              </table>
+            </div>
+          </div>
+          <div class="tab-content" id="142" style="display: none">
+            <div class="sport-team-score-details batter">
+              <table>
+                <thead>
+                  <tr>
+                    <th>Batter</th>
+                    <th>R</th>
+                    <th>B</th>
+                    <th>4s</th>
+                    <th>6s</th>
+                    <th>SR</th>
+                  </tr>
+                </thead>
+                <tbody>
+                  <tr>
+                    <td>
+                      <div class="player-name f-700">David Warner</div>
+                      <div class="player-status red f-700">
+                        c Babar Azam b Agha Salman
+                      </div>
+                    </td>
+                    <td>
+                      <div class="player-score-r f-700">34</div>
+                    </td>
+                    <td>
+                      <div class="player-score-b f-700">68</div>
+                    </td>
+                    <td>
+                      <div class="player-score-4s f-700">4</div>
+                    </td>
+                    <td>
+                      <div class="player-score-6s f-700">0</div>
+                    </td>
+                    <td>
+                      <div class="player-score-sr f-700">50.00</div>
+                    </td>
+                  </tr>
+                  <tr>
+                    <td>
+                      <div class="player-name f-700">Usman Khawaja</div>
+                      <div class="player-status red f-700">
+                        c Mohammad Rizwan b Aamer Jamal
+                      </div>
+                    </td>
+                    <td>
+                      <div class="player-score-r f-700">47</div>
+                    </td>
+                    <td>
+                      <div class="player-score-b f-700">143</div>
+                    </td>
+                    <td>
+                      <div class="player-score-4s f-700">4</div>
+                    </td>
+                    <td>
+                      <div class="player-score-6s f-700">0</div>
+                    </td>
+                    <td>
+                      <div class="player-score-sr f-700">32.87</div>
+                    </td>
+                  </tr>
+                  <tr>
+                    <td>
+                      <div class="player-name f-700">Marnus Labuschagne</div>
+                      <div class="player-status red f-700">not out</div>
+                    </td>
+                    <td>
+                      <div class="player-score-r f-700">23</div>
+                    </td>
+                    <td>
+                      <div class="player-score-b f-700">66</div>
+                    </td>
+                    <td>
+                      <div class="player-score-4s f-700">1</div>
+                    </td>
+                    <td>
+                      <div class="player-score-6s f-700">0</div>
+                    </td>
+                    <td>
+                      <div class="player-score-sr f-700">34.85</div>
+                    </td>
+                  </tr>
+                  <tr>
+                    <td>
+                      <div class="player-name f-700">Steven Smith</div>
+                      <div class="player-status red f-700">not out</div>
+                    </td>
+                    <td>
+                      <div class="player-score-r f-700">6</div>
+                    </td>
+                    <td>
+                      <div class="player-score-b f-700">7</div>
+                    </td>
+                    <td>
+                      <div class="player-score-4s f-700">1</div>
+                    </td>
+                    <td>
+                      <div class="player-score-6s f-700">0</div>
+                    </td>
+                    <td>
+                      <div class="player-score-sr f-700">85.71</div>
+                    </td>
+                  </tr>
+                </tbody>
+              </table>
+            </div>
+            <div class="sport-team-score-details bowler">
+              <table>
+                <thead>
+                  <tr>
+                    <th>Bowler</th>
+                    <th>O</th>
+                    <th>M</th>
+                    <th>R</th>
+                    <th>W</th>
+                    <th>ER</th>
+                  </tr>
+                </thead>
+                <tbody>
+                  <tr>
+                    <td>
+                      <div class="player-name f-700">Sajid Khan</div>
+                    </td>
+                    <td>
+                      <div class="player-score-r f-700">12</div>
+                    </td>
+                    <td>
+                      <div class="player-score-b f-700">0</div>
+                    </td>
+                    <td>
+                      <div class="player-score-4s f-700">38</div>
+                    </td>
+                    <td>
+                      <div class="player-score-6s f-700">0</div>
+                    </td>
+                    <td>
+                      <div class="player-score-sr f-700">3.17</div>
+                    </td>
+                  </tr>
+                  <tr>
+                    <td>
+                      <div class="player-name f-700">Mir Hamza</div>
+                    </td>
+                    <td>
+                      <div class="player-score-r f-700">10</div>
+                    </td>
+                    <td>
+                      <div class="player-score-b f-700">0</div>
+                    </td>
+                    <td>
+                      <div class="player-score-4s f-700">11</div>
+                    </td>
+                    <td>
+                      <div class="player-score-6s f-700">0</div>
+                    </td>
+                    <td>
+                      <div class="player-score-sr f-700">1.10</div>
+                    </td>
+                  </tr>
+                  <tr>
+                    <td>
+                      <div class="player-name f-700">Aamer Jamal</div>
+                    </td>
+                    <td>
+                      <div class="player-score-r f-700">8</div>
+                    </td>
+                    <td>
+                      <div class="player-score-b f-700">0</div>
+                    </td>
+                    <td>
+                      <div class="player-score-4s f-700">26</div>
+                    </td>
+                    <td>
+                      <div class="player-score-6s f-700">1</div>
+                    </td>
+                    <td>
+                      <div class="player-score-sr f-700">3.25</div>
+                    </td>
+                  </tr>
+                  <tr>
+                    <td>
+                      <div class="player-name f-700">Hasan Ali</div>
+                    </td>
+                    <td>
+                      <div class="player-score-r f-700">9</div>
+                    </td>
+                    <td>
+                      <div class="player-score-b f-700">0</div>
+                    </td>
+                    <td>
+                      <div class="player-score-4s f-700">19</div>
+                    </td>
+                    <td>
+                      <div class="player-score-6s f-700">0</div>
+                    </td>
+                    <td>
+                      <div class="player-score-sr f-700">2.11</div>
+                    </td>
+                  </tr>
+                  <tr>
+                    <td>
+                      <div class="player-name f-700">Agha Salman</div>
+                    </td>
+                    <td>
+                      <div class="player-score-r f-700">8</div>
+                    </td>
+                    <td>
+                      <div class="player-score-b f-700">0</div>
+                    </td>
+                    <td>
+                      <div class="player-score-4s f-700">18</div>
+                    </td>
+                    <td>
+                      <div class="player-score-6s f-700">1</div>
+                    </td>
+                    <td>
+                      <div class="player-score-sr f-700">2.25</div>
+                    </td>
+                  </tr>
+                </tbody>
+              </table>
+            </div>
+            <div class="sport-team-score-details fow">
+              <table>
+                <thead>
+                  <tr>
+                    <th>Fall of wickets</th>
+                    <th>Score</th>
+                    <th>Over</th>
+                  </tr>
+                </thead>
+                <tbody>
+                  <tr>
+                    <td>
+                      <div class="player-name f-700">DA Warner</div>
+                    </td>
+                    <td>
+                      <div class="player-score-r f-700">70 - 1</div>
+                    </td>
+                    <td>
+                      <div class="player-score-b f-700">24.3</div>
+                    </td>
+                  </tr>
+                  <tr>
+                    <td>
+                      <div class="player-name f-700">UT Khawaja</div>
+                    </td>
+                    <td>
+                      <div class="player-score-r f-700">108 - 2</div>
+                    </td>
+                    <td>
+                      <div class="player-score-b f-700">43.3</div>
+                    </td>
+                  </tr>
+                </tbody>
+              </table>
+            </div>
+            <div class="sport-team-score-details bowler">
+              <table>
+                <thead>
+                  <tr>
+                    <th>Partnership</th>
+                    <th>Run</th>
+                    <th>Ball</th>
+                  </tr>
+                </thead>
+                <tbody>
+                  <tr>
+                    <td>
+                      <div class="player-name f-700">
+                        Usman Khawaja &amp; David Warner
+                      </div>
+                    </td>
+                    <td>
+                      <div class="player-score-r f-700">70</div>
+                    </td>
+                    <td>
+                      <div class="player-score-b f-700">149</div>
+                    </td>
+                  </tr>
+                  <tr>
+                    <td>
+                      <div class="player-name f-700">
+                        Marnus Labuschagne &amp; Usman Khawaja
+                      </div>
+                    </td>
+                    <td>
+                      <div class="player-score-r f-700">38</div>
+                    </td>
+                    <td>
+                      <div class="player-score-b f-700">114</div>
+                    </td>
+                  </tr>
+                  <tr>
+                    <td>
+                      <div class="player-name f-700">
+                        Marnus Labuschagne &amp; Steven Smith
+                      </div>
+                    </td>
+                    <td>
+                      <div class="player-score-r f-700">8</div>
+                    </td>
+                    <td>
+                      <div class="player-score-b f-700">21</div>
+                    </td>
+                  </tr>
+                </tbody>
+              </table>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+    <!-- Scorecard end -->
+
+    <div class="squad" style="display: none;">
+        <h1 style="text-align: center; padding: 2rem;">Playing XI</h1>
+      <div class="team-flags">
+        <div class="left">
+          <div>
+            <img
+              src="https://upload.wikimedia.org/wikipedia/en/thumb/4/41/Flag_of_India.svg/1200px-Flag_of_India.svg.png"
+              alt=""
+            />
+          </div>
+          <div>IND</div>
+        </div>
+        <div class="right">
+          <div>
+            <img
+              src="https://cdn.britannica.com/46/3346-004-D3BDE016/flag-symbolism-Pakistan-design-Islamic.jpg"
+              alt=""
+            />
+          </div>
+          <div>PAK</div>
+        </div>
+      </div>
+
+      <div class="left-team">
+        <div class="player-info">
+          <a>
+            <div class="">
+              <img
+                class="img"
+                width="40px"
+                height="40px"
+                src="https://static.cricbuzz.com/a/img/v1/40x40/i1/c157353/player_face.jpg"
+              />
+            </div>
+            <div class="player-name">
+              <div>
+                Dean Elgar (C) <br />
+                <span class="">Batter</span>
+              </div>
+            </div>
+          </a>
+        </div>
+      </div>
+      <div class="right-team">
+        <div class="player-info">
+          <a>
+            <div class="">
+              <img
+                class="img"
+                width="40px"
+                height="40px"
+                src="https://static.cricbuzz.com/a/img/v1/40x40/i1/c157353/player_face.jpg"
+              />
+            </div>
+            <div class="player-name">
+              <div>
+                Dean Elgar (C) <br />
+                <span class="">Batter</span>
+              </div>
+            </div>
+          </a>
+        </div>
+      </div>
+      <div class="left-team">
+        <div class="player-info">
+          <a>
+            <div class="">
+              <img
+                class="img"
+                width="40px"
+                height="40px"
+                src="https://static.cricbuzz.com/a/img/v1/40x40/i1/c157353/player_face.jpg"
+              />
+            </div>
+            <div class="player-name">
+              <div>
+                Dean Elgar (C) <br />
+                <span class="">Batter</span>
+              </div>
+            </div>
+          </a>
+        </div>
+      </div>
+      <div class="right-team">
+        <div class="player-info">
+          <a>
+            <div class="">
+              <img
+                class="img"
+                width="40px"
+                height="40px"
+                src="https://static.cricbuzz.com/a/img/v1/40x40/i1/c157353/player_face.jpg"
+              />
+            </div>
+            <div class="player-name">
+              <div>
+                Dean Elgar (C) <br />
+                <span class="">Batter</span>
+              </div>
+            </div>
+          </a>
+        </div>
+      </div>
+      <div class="left-team">
+        <div class="player-info">
+          <a>
+            <div class="">
+              <img
+                class="img"
+                width="40px"
+                height="40px"
+                src="https://static.cricbuzz.com/a/img/v1/40x40/i1/c157353/player_face.jpg"
+              />
+            </div>
+            <div class="player-name">
+              <div>
+                Dean Elgar (C) <br />
+                <span class="">Batter</span>
+              </div>
+            </div>
+          </a>
+        </div>
+      </div>
+      <div class="right-team">
+        <div class="player-info">
+          <a>
+            <div class="">
+              <img
+                class="img"
+                width="40px"
+                height="40px"
+                src="https://static.cricbuzz.com/a/img/v1/40x40/i1/c157353/player_face.jpg"
+              />
+            </div>
+            <div class="player-name">
+              <div>
+                Dean Elgar (C) <br />
+                <span class="">Batter</span>
+              </div>
+            </div>
+          </a>
+        </div>
+      </div>
+      <div class="left-team">
+        <div class="player-info">
+          <a>
+            <div class="">
+              <img
+                class="img"
+                width="40px"
+                height="40px"
+                src="https://static.cricbuzz.com/a/img/v1/40x40/i1/c157353/player_face.jpg"
+              />
+            </div>
+            <div class="player-name">
+              <div>
+                Dean Elgar (C) <br />
+                <span class="">Batter</span>
+              </div>
+            </div>
+          </a>
+        </div>
+      </div>
+      <div class="right-team">
+        <div class="player-info">
+          <a>
+            <div class="">
+              <img
+                class="img"
+                width="40px"
+                height="40px"
+                src="https://static.cricbuzz.com/a/img/v1/40x40/i1/c157353/player_face.jpg"
+              />
+            </div>
+            <div class="player-name">
+              <div>
+                Dean Elgar (C) <br />
+                <span class="">Batter</span>
+              </div>
+            </div>
+          </a>
+        </div>
+      </div>
+      <div class="left-team">
+        <div class="player-info">
+          <a>
+            <div class="">
+              <img
+                class="img"
+                width="40px"
+                height="40px"
+                src="https://static.cricbuzz.com/a/img/v1/40x40/i1/c157353/player_face.jpg"
+              />
+            </div>
+            <div class="player-name">
+              <div>
+                Dean Elgar (C) <br />
+                <span class="">Batter</span>
+              </div>
+            </div>
+          </a>
+        </div>
+      </div>
+      <div class="right-team">
+        <div class="player-info">
+          <a>
+            <div class="">
+              <img
+                class="img"
+                width="40px"
+                height="40px"
+                src="https://static.cricbuzz.com/a/img/v1/40x40/i1/c157353/player_face.jpg"
+              />
+            </div>
+            <div class="player-name">
+              <div>
+                Dean Elgar (C) <br />
+                <span class="">Batter</span>
+              </div>
+            </div>
+          </a>
+        </div>
+      </div>
+      <div class="left-team">
+        <div class="player-info">
+          <a>
+            <div class="">
+              <img
+                class="img"
+                width="40px"
+                height="40px"
+                src="https://static.cricbuzz.com/a/img/v1/40x40/i1/c157353/player_face.jpg"
+              />
+            </div>
+            <div class="player-name">
+              <div>
+                Dean Elgar (C) <br />
+                <span class="">Batter</span>
+              </div>
+            </div>
+          </a>
+        </div>
+      </div>
+      <div class="right-team">
+        <div class="player-info">
+          <a>
+            <div class="">
+              <img
+                class="img"
+                width="40px"
+                height="40px"
+                src="https://static.cricbuzz.com/a/img/v1/40x40/i1/c157353/player_face.jpg"
+              />
+            </div>
+            <div class="player-name">
+              <div>
+                Dean Elgar (C) <br />
+                <span class="">Batter</span>
+              </div>
+            </div>
+          </a>
+        </div>
+      </div>
+    </div>
+    <script>
+     
+      const match_info = document.querySelector(".match-info");
+      const scorecard = document.querySelector(".scorecard");
+      const squad = document.querySelector(".squad");
+      const scorecard_btn = document.querySelector(".scorecard-btn");
+      const squad_btn = document.querySelector(".squad-btn");
+      const match_info_btn = document.querySelector(".match-info-btn");
+     
+
+
+      match_info_btn.addEventListener("click", () => {
+        match_info.style.display = "block";
+        scorecard.style.display = "none";
+        squad.style.display = "none";
+       
+
+    
+        match_info_btn.classList.add("active");
+        
+        scorecard_btn.classList.remove("active");
+        squad_btn.classList.remove("active");
+
+
+      });
+   
+      
+      scorecard_btn.addEventListener("click", () => {
+        match_info.style.display = "none";
+        scorecard.style.display = "block";
+        squad.style.display = "none";
+  
+
+      
+        match_info_btn.classList.remove("active");
+       
+        scorecard_btn.classList.add("active");
+        squad_btn.classList.remove("active");
+
+      });
+      squad_btn.addEventListener("click", () => {
+        match_info.style.display = "none";
+        
+        scorecard.style.display = "none";
+        squad.style.display = "block";
+        
+
+        
+        match_info_btn.classList.remove("active");
+       
+        scorecard_btn.classList.remove("active");
+        squad_btn.classList.add("active");
+
+      });
+
+    </script>
+  </body>
+</html>
