@@ -1,4 +1,4 @@
 var config = {
-    apiKey: ""
+    API_KEY: ""
 };
 
