@@ -19,6 +19,8 @@ fetch(`http://apicricketchampion.in/apiv3/liveMatchList/${apiKey}`, requestOptio
                 for (let i = 0; i < result.data.length; i++) {
                     if (result.data[i].match_status === "Live") {
                         var match = result.data[i];
+                        var match_id = match.match_id;
+                        getLiveMatchData(match_id)
 
                         match_data += `<div class="swiper-slide">
                                         <a href="LiveMatch.html">
@@ -83,6 +85,7 @@ fetch(`http://apicricketchampion.in/apiv3/liveMatchList/${apiKey}`, requestOptio
                     "beforeend",
                     `<h2 style="text-align: center">No Live Matches</h2>`
                 );
+            console.log("No live match running");
         }
 
 
@@ -143,7 +146,8 @@ fetch(`http://apicricketchampion.in/apiv3/recentMatches/${apiKey}`, requestOptio
             for (let i = 0; i < result.data.length; i++) {
                 if (result.data[i].match_status === "Finished") {
                     var match = result.data[i];
-
+                    var match_id = match.match_id;
+                    getMatchInfo(match_id)
                     match_data += `<div class="swiper-slide">
                                           <a href="LiveMatch.html">
                                           <div class="score-card-frame">
@@ -274,9 +278,10 @@ fetch(`http://apicricketchampion.in/apiv3/upcomingMatches/${apiKey}`, requestOpt
             for (let i = 0; i < result.data.length; i++) {
                 if (result.data[i].match_status === "Upcoming") {
                     var match = result.data[i];
-
+                    var match_id = match.match_id;
+                    // getMatchInfo(match_id)
                     match_data += `<div class="swiper-slide">
-                        <a href="LiveMatch.html">
+                        <a href="#">
                           <div class="score-card-frame">
                             <div class="score-card-frame1">
                               <div class="score-card">
@@ -365,6 +370,53 @@ fetch(`http://apicricketchampion.in/apiv3/upcomingMatches/${apiKey}`, requestOpt
 
 
 
+
+
+
+function getMatchInfo(matchId) {
+    var formdata = new FormData();
+    formdata.append("match_id", matchId);
+
+    var requestOptions = {
+        method: 'POST',
+        body: formdata,
+        redirect: 'follow'
+    };
+
+    fetch(`http://apicricketchampion.in/apiv3/matchInfo/${apiKey}`, requestOptions)
+        .then(response => response.text())
+        .then(result => console.log(result))
+        .catch(error => console.log('error', error));
+}
+function getLiveMatchData(matchId) {
+    var formdata = new FormData();
+    formdata.append("match_id", matchId);
+
+    var requestOptions = {
+        method: 'POST',
+        body: formdata,
+        redirect: 'follow'
+    };
+
+    fetch(`http://apicricketchampion.in/apiv3/liveMatch/${apiKey}`, requestOptions)
+        .then(response => response.text())
+        .then(result => console.log(result))
+        .catch(error => console.log('error', error));
+}
+
+
+
+
+
+
+
+
+
+
+
+
+
+
 var requestOptions = {
     method: "GET",
     redirect: "follow",
@@ -379,7 +431,6 @@ fetch(`http://apicricketchampion.in/apiv3/news/${apiKey}`, requestOptions)
 
 
         for (const item of result.data) {
-            console.log(item.content[0]);
             news.innerHTML += `
             <li>
                 <div class="item">
