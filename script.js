@@ -1,4 +1,4 @@
-// var apiKey ;
+var apiKey ="" ;
 
 var requestOptions = {
     method: "GET",
