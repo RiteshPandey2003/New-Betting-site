@@ -83,7 +83,7 @@ fetch(`http://apicricketchampion.in/apiv3/liveMatchList/${apiKey}`, requestOptio
                 .querySelector(".swiper-wrapper")
                 .insertAdjacentHTML(
                     "beforeend",
-                    `<h2 style="text-align: center">No Live Matches</h2>`
+                    `<h2 style = "margin-auto">No Live Matches</h2>`
                 );
             console.log("No live match running");
         }
